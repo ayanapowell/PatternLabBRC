@@ -1,0 +1,75 @@
+.navigation-button {
+  .menu-icon { // width of hamburger menu
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    .menu-icon__wrapper {
+      cursor: pointer;
+      width: 54px;
+      height: 48px;
+      align-self: flex-start;
+      right: 0;
+      z-index: 32;
+      // aligns entire button, move to parent
+      // margin: 35px 60px;
+
+      @include mobile {
+        margin: 40px 30px;
+      }
+      a.menu-icon__button {
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+      }
+    }
+    span { // middle line in hamburger menu
+      height: 2px;
+      position: absolute;
+      background: $c-blacklightened;
+      text-indent: -999em;
+      width: 40px;
+      transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
+      z-index: 100;
+      margin: 25px 0; 
+
+      &:before, &:after { // top and bottom line in hamburger menu
+        content: '';
+        height: 2px;
+        background: $c-blacklightened;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        transition: all 0.5s cubic-bezier(0, 0.275, 0.125, 1);
+        z-index: 100;
+      }
+
+      &:before {
+        width: 40px;
+      }
+
+      &:after {
+        width: 30px;
+        align-self: flex-end;
+        top: 10px;
+      }
+    }
+
+    .active span {
+      background: transparent;
+
+      &:before {
+        transform: translateY(10px) translateX(1px) rotate(45deg);
+        background-color: $c-blacklightened;
+      }
+
+      &:after {
+        transform: translateY(-10px) translateX(1px) rotate(-45deg);
+        background-color: $c-blacklightened;
+        width: 100%;
+        transition: width 0.3s ease;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.icons {
+    .fa {
+    color: #b3b3b3;
+    @include font-size(25px);
+    cursor: pointer;
+    &:hover {
+      color: $c-darkgrey;
+    }
+  }
+}

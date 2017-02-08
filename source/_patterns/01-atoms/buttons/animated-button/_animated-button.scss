@@ -1,0 +1,50 @@
+a.animated-button {
+  @include font-size(15px);
+  color: $c-gray;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: $ff--button;
+  font-weight: 700;
+  text-decoration: none;
+  // padding: 15px;
+  position: relative;
+  transition: background 0.3s ease-in 0.2s;
+  text-align: center;
+  &:after,
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: $c-gray;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+  }
+  &:before {
+    opacity: 0;
+    bottom: 50%;
+    background: $c-darkgrey;
+    height: 4px;
+  }
+  &:not(.no-hover):hover {
+    background: $c-darkgrey;
+    transition: background 0.3s ease-in 0.3s;
+    z-index: 30;
+  }
+  &:not(.no-hover):hover:before {
+    bottom: 100%;
+    opacity: 1;
+    z-index: 30;
+  }
+  &:active {
+    color: $c-black;
+    background: transparent;
+    transition: background 0.3s ease-in 0.3s;
+    &:before {
+      bottom: 50%;
+      opacity: 0;
+    }
+  }
+}

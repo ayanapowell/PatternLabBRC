@@ -2,12 +2,22 @@
   "items": [
     {
       "name": "$ff--regular",
-      "value": "'LatoRegular', sans-serif",
+      "value": "'Cormorant Garamond', serif",
       "comment": ""
     },
     {
       "name": "$ff--alternate",
-      "value": "'Helvetica', sans-serif",
+      "value": "'PT Sans', sans-serif",
+      "comment": ""
+    },
+    {
+      "name": "$ff--button",
+      "value": "'Raleway', sans-serif",
+      "comment": ""
+    },
+    {
+      "name": "$ff--logo",
+      "value": "audimat",
       "comment": ""
     }
   ],

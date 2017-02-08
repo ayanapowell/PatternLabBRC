@@ -1,5 +1,6 @@
 {
   "pl": true,
+  "word": "Faker.word(1,true)",
   "title": "Faker.words(2, true)",
   "text": "Faker.words(3, true)",
   "site_title": "Faker.words(2, true)",

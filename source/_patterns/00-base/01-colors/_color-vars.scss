@@ -1,12 +1,15 @@
-$c-red: hsl(352, 92%, 38%); // Primary Color. Used for links
-$c-blue: hsl(208, 100%, 50%);
+$c-black: #000000;
+$c-white: #ffffff;
+$c-greylight: #434343;
+$c-blacklightened: #1a1a1a; // primary color
+$c-grey: #f2f2f2; // primary color
+$c-darkgrey: #37373f; // buttons and footer bg-color
+$c-gold: #B88B4A; // accent color
+$c-quote:  #737373; // light gray for quotes
 
-$c-white: white;
-$c-gray--lightest: hsl(0, 0%, 89%);
-$c-gray--lighter: hsl(0, 0%, 80%);
-$c-gray--light: hsl(0, 0%, 60%);
-$c-gray: hsl(0, 0%, 48%);
-$c-gray--dark: hsl(0, 0%, 40%);
-$c-gray--darker: hsl(0, 0%, 20%);
-$c-gray--darkest: hsl(0, 0%, 16.1%);
-$c-black: black;
+
+// delete
+$c-border: black;
+$c-red: red;
+$c-gray--light: #f2f2f2;
+$c-gray: #f2f2f2;

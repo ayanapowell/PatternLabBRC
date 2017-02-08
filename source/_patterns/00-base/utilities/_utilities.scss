@@ -1,3 +1,42 @@
+// Mixin for converting px font to rem
+@function calculateRem($size) {
+ $remSize: $size / 16px;
+ @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+ font-size: $size;
+ font-size: calculateRem($size);
+}
+
+@mixin line-height($size) {
+ line-height: $size;
+ line-height: calculateRem($size);
+}
+
+@mixin font($font-size, $line-height) {
+ @include font-size($font-size);
+ @include line-height($line-height);
+}
+
+// Media Query mixin
+$break-med: 769px;
+$break-small: 768px;
+$break-xsmall: 480px;
+
+@mixin phone {
+	@media (max-width: $break-xsmall) { @content; }
+}
+
+@mixin mobile {
+	  @media (max-width: $break-small) { @content; }
+}
+
+@mixin desktop {
+	@media (min-width: $break-med) { @content; }
+}
+
+
 /// Mixin - Fluid Type
 /// PRECISE CONTROL OVER RESPONSIVE TYPOGRAPHY FOR SASS
 /// Indrek Paas @indrekpaas

@@ -1,4 +1,7 @@
 <header class="site-header">
-  {% include "@molecules/branding.twig" %}
-  <h2>Site Header</h2>
+  <div class="site-header__navigation-button">
+    {% include "@atoms/navigation-button.twig" %}    
+  </div>
+  {% include "@molecules/site-logo.twig" %}
+  <p class="header__contact-info">{{email}}</p>
 </header>

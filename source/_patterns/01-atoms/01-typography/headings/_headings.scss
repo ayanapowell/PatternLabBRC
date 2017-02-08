@@ -1,51 +1,100 @@
-@mixin h1() {
-  font-family: $ff--regular;
-  font-size: 3em; // 48px
+// // // Crispy Text. turn this off and on to see what i mean.
+h1, h2, h3, h4, h5, h6, p,label, a, li {
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	-webkit-font-smoothing: antialiased !important;
 }
 
-@mixin h2() {
-  font-family: $ff--regular;
-  font-size: 1.875em; // 30px
+h1, h2, h3, h4, h5, h6, p {
+	color: $c-grey;
+	font-weight: normal;
+}
+p {
+	font-family: $ff--regular;
+	font-size: get-vw(64px);
+	line-height: get-vw(104px);
 }
 
-@mixin h3() {
-  font-family: $ff--regular;
-  font-size: 1.5em; // 24px
+// //  you can set styles ither by tag or by class. if you choose class then baseline all tags like this:
+h1,h2,h3,h4,h5,h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	margin: 0;
 }
 
-@mixin h4() {
-  font-family: $ff--regular;
+h2.header__title, h3.header__title, p.header__contact-info {
+	font-family: audimat;
+  color: $c-blacklightened;
+  height: 100%;
 }
 
-@mixin h5() {
-  font-family: $ff--regular;
+h2.header__title {
+	@include font-size(45px);
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
-@mixin h6() {
-  font-family: $ff--regular;
+h3.header__title {
+	@include font-size(25px);
+	letter-spacing: 5px;
+
 }
 
-h1, .h1 {
-  @include h1();
-  color: $c-red;
+p.header__contact-info  {
+	@include font-size(12px);
+  letter-spacing: 0.3px;
 }
 
-h2, .h2 {
-  @include h2();
-}
-
-h3, .h3 {
-  @include h3();
-}
-
-h4, .h4 {
-  @include h4();
-}
-
-h5, .h5 {
-  @include h5();
-}
-
-h6, .h6 {
-  @include h6();
-}
+// // PL-Starter
+// @mixin h1() {
+//   font-family: $ff--regular;
+//   font-size: 3em; // 48px
+// }
+//
+// @mixin h2() {
+//   font-family: $ff--regular;
+//   font-size: 1.875em; // 30px
+// }
+//
+// @mixin h3() {
+//   font-family: $ff--regular;
+//   font-size: 1.5em; // 24px
+// }
+//
+// @mixin h4() {
+//   font-family: $ff--regular;
+// }
+//
+// @mixin h5() {
+//   font-family: $ff--regular;
+// }
+//
+// @mixin h6() {
+//   font-family: $ff--regular;
+// }
+//
+// h1, .h1 {
+//   @include h1();
+//   color: $c-red;
+// }
+//
+// h2, .h2 {
+//   @include h2();
+// }
+//
+// h3, .h3 {
+//   @include h3();
+// }
+//
+// h4, .h4 {
+//   @include h4();
+// }
+//
+// h5, .h5 {
+//   @include h5();
+// }
+//
+// h6, .h6 {
+//   @include h6();
+// }
