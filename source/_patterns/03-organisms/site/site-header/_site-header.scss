@@ -1,27 +1,13 @@
-.site-header {
+header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;;
   align-items: center;
   border: solid;
-  flex-direction: row;
+  position: relative;
+}
 
-  p.header__contact-info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-right: 50px;
-    padding-top: 47px;
-  }
-  .site-header__navigation-button {
-    cursor: pointer;
-    width: 54px;
-    height: 48px;
-    align-self: baseline;
-    position: relative;
-    z-index: 32;
-    // margin: 35px 60px;
-     a {
-       left: 0;
-     }
-  }
+.header__navigation-button {
+  cursor: pointer;
+  width: 54px;
+  height: 48px;
 }
