@@ -1,17 +1,17 @@
 {
   "items": [
     {
-      "name": "$ff--regular",
+      "name": "$ff--alternate",
       "value": "'Cormorant Garamond', serif",
       "comment": ""
     },
     {
-      "name": "$ff--alternate",
+      "name": "$ff--bold",
       "value": "'PT Sans', sans-serif",
       "comment": ""
     },
     {
-      "name": "$ff--button",
+      "name": "$ff--regular",
       "value": "'Raleway', sans-serif",
       "comment": ""
     },

@@ -1,19 +1,10 @@
 .navigation-button {
   .menu-icon { // width of hamburger menu
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // position: absolute;
     cursor: pointer;
     .menu-icon__wrapper {
       cursor: pointer;
       width: 54px;
       height: 48px;
-      // align-self: flex-start;
-      // right: 0;
-      // z-index: 32;
-      // aligns entire button, move to parent
-      // margin: 35px 60px;
 
       @include mobile {
         margin: 40px 30px;

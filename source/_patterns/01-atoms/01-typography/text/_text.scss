@@ -1,30 +1,42 @@
-a {
-	color: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	text-decoration: none;
+// ================= HEADER ================== //
+.header__title, .header__contact-info {
+  color: $c-blacklightened;
+  height: 100%;
 }
 
-// then create classes
-.title {
-	@include font(32px,44px);
+.header__title {
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
-.nav-item {
-	font-weight: 700;
+.header__contact-info  {
+  letter-spacing: 0.3px;
 }
 
-.subject-header {
-	@include font-size(25px);
+// ================ HERO TEXT ============ //
+.hero__tagline {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  color: $c-grey;
+}
+
+// ================ Quotes! Quotes! ============= //
+.quote {
+	color: $c-quote;
 	text-align: center;
-	text-transform: uppercase;
-}
+	padding: 0 10%;
+	font-style: italic;
+	font-weight: bold;
 
-.subject {
-	@include font-size(15px);
-	width: 100%;
-	text-transform: uppercase;
-	font-weight: 900;
+	span { // Said by....
+		@include font-size(20px);
+		font-style: normal;
+		font-weight: normal;
+		width: 60%;
+		display: block;
+		margin-left: auto;
+	}
 }
 
 // ========= PL STARTER =========== //

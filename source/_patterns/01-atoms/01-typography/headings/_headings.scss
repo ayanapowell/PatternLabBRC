@@ -8,10 +8,18 @@ h1, h2, h3, h4, h5, h6, p {
 	color: $c-grey;
 	font-weight: normal;
 }
+
 p {
 	font-family: $ff--regular;
 	font-size: get-vw(64px);
 	line-height: get-vw(104px);
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
 }
 
 // //  you can set styles ither by tag or by class. if you choose class then baseline all tags like this:
@@ -23,78 +31,70 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
 
-h2.header__title, h3.header__title, p.header__contact-info {
-	font-family: audimat;
-  color: $c-blacklightened;
-  height: 100%;
+.gold {
+	color: $c-gold;
+}
+ // ================= PT SANS Sizing ================= //
+ .pt-sm { // Footer email and phonenumber
+ 	@include font-size(20px);
+ 	font-family: $ff--bold;
+ }
+
+.pt-md { // BRC Expertise Title, Footer Social heading
+	@include font-size(30px);
+	font-family: $ff--bold;
 }
 
-h2.header__title {
-	@include font-size(45px);
-	text-transform: uppercase;
-	letter-spacing: 5px;
+.pt-lg { // hero text
+	@include font-size(60px);
+	font-family: $ff--bold;
 }
 
-h3.header__title {
+
+//  ================= Raleway Sizing  ================= //
+.raleway-sm { // Services description, footer copyright
+	@include font-size(18px);
+	font-family: $ff--regular;
+}
+
+.raleway-md { // navigation items
 	@include font-size(25px);
-	letter-spacing: 5px;
-
+	font-family: $ff--regular;
 }
 
-p.header__contact-info  {
+.raleway-lg { // navigation items
+	@include font-size(35px);
+	font-family: $ff--regular;
+}
+
+//  ================= Cormorant sizing  ================= //
+.cormorant-sm { // BRC Expertice description
+	@include font-size(18px);
+	font-family: $ff--alternate;
+}
+
+.cormorant-md {
+	@include font-size(30px);
+	font-family: $ff--alternate;
+}
+
+.cormorant-lg { // used in footer "if youre ready, so are we"
+	@include font-size(60px)
+	font-family: $ff--alternate;
+}
+
+//  ================= Audimat Sizing (Logo Only)  ================= //
+.audimat-sm {
 	@include font-size(12px);
-  letter-spacing: 0.3px;
+	font-family: $ff--logo;
 }
 
-// // PL-Starter
-// @mixin h1() {
-//   font-family: $ff--regular;
-//   font-size: 3em; // 48px
-// }
-//
-// @mixin h2() {
-//   font-family: $ff--regular;
-//   font-size: 1.875em; // 30px
-// }
-//
-// @mixin h3() {
-//   font-family: $ff--regular;
-//   font-size: 1.5em; // 24px
-// }
-//
-// @mixin h4() {
-//   font-family: $ff--regular;
-// }
-//
-// @mixin h5() {
-//   font-family: $ff--regular;
-// }
-//
-// @mixin h6() {
-//   font-family: $ff--regular;
-// }
-//
-// h1, .h1 {
-//   @include h1();
-//   color: $c-red;
-// }
-//
-// h2, .h2 {
-//   @include h2();
-// }
-//
-// h3, .h3 {
-//   @include h3();
-// }
-//
-// h4, .h4 {
-//   @include h4();
-// }
-//
-// h5, .h5 {
-//   @include h5();
-// }
-//
-// h6, .h6 {
-//   @include h6();
-// }
+.audimat-md {
+	@include font-size(25px);
+	font-family: $ff--logo;
+}
+
+.audimat-lg {
+	@include font-size(45px);
+	font-family: $ff--logo;
+}
