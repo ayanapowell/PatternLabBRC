@@ -82,6 +82,7 @@ plugins:
           - ../source/_patterns/02-molecules/hero-block
           - ../source/_patterns/02-molecules/quote-block
           - ../source/_patterns/02-molecules/social-icons
+          - ../source/_patterns/02-molecules/text-block
       organisms:
         paths:
           - ../source/_patterns/03-organisms
