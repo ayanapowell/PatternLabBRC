@@ -15,6 +15,9 @@
     "alt": "Hero Image",
     "class": "hero-image"
   },
+  "icon": {
+    "src": "../../../../images/fpo_square.png"
+  },
   "excerpt": {
     "short": "Faker.sentence",
     "medium": "Faker.sentences(2, true)",

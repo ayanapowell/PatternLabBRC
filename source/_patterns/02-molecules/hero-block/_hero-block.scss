@@ -1,0 +1,27 @@
+.hero-block {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-block__image {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-block__punchline {
+  position: relative;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-block__button {
+  position: relative;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
