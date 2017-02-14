@@ -32,6 +32,7 @@ component-libraries:
       - source/_patterns/01-atoms/buttons/navigation-button
       - source/_patterns/01-atoms/icons
       - source/_patterns/01-atoms/images
+      - source/_patterns/01-atoms/images/hero-image
   molecules:
     paths:
       - source/_patterns/02-molecules

@@ -10,6 +10,11 @@
     "medium": "Faker.words(5, true)",
     "long": "Faker.words(7, true)"
   },
+  "imgHero": {
+    "src": "../../../../images/fpo_4x3.png",
+    "alt": "Hero Image",
+    "class": "hero-image"
+  },
   "excerpt": {
     "short": "Faker.sentence",
     "medium": "Faker.sentences(2, true)",
