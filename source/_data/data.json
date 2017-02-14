@@ -7,7 +7,8 @@
   "site_slogan": "Faker.words(5, true)",
   "headline": {
     "short": "Faker.words(3, true)",
-    "medium": "Faker.words(7, true)"
+    "medium": "Faker.words(5, true)",
+    "long": "Faker.words(7, true)"
   },
   "excerpt": {
     "short": "Faker.sentence",
@@ -24,6 +25,7 @@
     "last": "Faker.lastName"
   },
   "email": "Faker.email",
+  "phoneNumber": "Faker.phoneNumber",
   "username": "Faker.userName",
   "year": {
     "long": "Faker.year",

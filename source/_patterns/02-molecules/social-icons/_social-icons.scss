@@ -1,0 +1,28 @@
+.social-icons {
+  display: flex;
+}
+
+.fa {
+  cursor: pointer;
+  padding: 0 10px;
+  transition:color 0.2s ease;
+
+  &.fa-facebook {
+    @include font-size(30px);
+     &:hover {
+      color: #3b5998;
+    }
+  }
+  &.fa-instagram {
+    @include font-size(30px);
+     &:hover {
+      color: #bc2a8d;
+    }
+  }
+  &.fa-twitter {
+    @include font-size(30px);
+     &:hover {
+      color: #1da1f2;
+    }
+  }
+}

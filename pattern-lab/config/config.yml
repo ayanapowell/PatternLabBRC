@@ -73,6 +73,9 @@ plugins:
           - ../source/_patterns/02-molecules
           - ../source/_patterns/02-molecules/branding/site-logo
           - ../source/_patterns/02-molecules/caption-block
+          - ../source/_patterns/02-molecules/footer-blocks/footer-bottom
+          - ../source/_patterns/02-molecules/footer-blocks/footer-top
+          - ../source/_patterns/02-molecules/social-icons
       organisms:
         paths:
           - ../source/_patterns/03-organisms

@@ -1,5 +1,23 @@
-$c-primary: $c-blacklightened;
-$c-secondary: $c-grey;
+.c--primary-light {
+  color: $c-grey;
+}
 
-$c-accent: $c-gold;
-$c-quote: $c-quote;
+.c--primary-dark {
+  color: $c-blacklightened;
+}
+
+.c--accent {
+	color: $c-gold;
+}
+
+.c--light-grey {
+  color: $c-quote;
+}
+
+.c--dark-grey {
+  color: $c-blacklightened;
+}
+
+.c--test {
+  color: $c-blacklightened;
+}
