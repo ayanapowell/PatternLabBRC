@@ -78,6 +78,7 @@ plugins:
           - ../source/_patterns/02-molecules/footer-blocks/footer-bottom
           - ../source/_patterns/02-molecules/footer-blocks/footer-top
           - ../source/_patterns/02-molecules/hero-block
+          - ../source/_patterns/02-molecules/quote-block
           - ../source/_patterns/02-molecules/social-icons
       organisms:
         paths:
