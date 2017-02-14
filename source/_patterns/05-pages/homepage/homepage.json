@@ -1,0 +1,9 @@
+{
+  "pageItems": [
+    {
+      "src": "../../../../images/icons/icon.svg",
+      "alt": "Hero Image",
+      "class": "hero-image"
+    }
+  ]
+}

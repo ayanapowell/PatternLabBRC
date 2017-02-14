@@ -1,17 +1,8 @@
+<!-- Lower half of footer that displays social networking links -->
 <div class="footer__bottom">
-  <h2 class="pt-md c--primary-light">{{text}}</h2>
-  <div class="footer__bottom-social-icons">
-		{% include '@molecules/social-icons.twig' %}
-  </div>
-  <p class="raleway-sm c--primary-light">&copy {{title}}</p>
-</div>
-
-{#
-<footer class="footer-bottom">
-  <h2 class="{{font_style}} {{font_color}}">{{text}}</h2>
+  <h2 class="{{font_style.pt.md}} {{font_color.light}}">{{text}}</h2>
   <div class="footer__bottom-social-icons">
 		{% include '@molecules/social-icons.twig'%}
   </div>
-  <p class="{{font_style2}} {{font_color}}">&copy {{title}}</p>
-</footer>
-#}
+  <p class="{{font_style.raleway.sm}} {{font_color.light}}">&copy {{title}}</p>
+</div>

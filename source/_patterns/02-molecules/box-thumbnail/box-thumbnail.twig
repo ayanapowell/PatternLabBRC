@@ -1,27 +1,13 @@
+<!-- Grid item that is displayed on homepage -->
 <div class="box-thumbnail">
   <div class="box-thumbnail__icon">
     {% include "@atoms/grid-icon.twig" %}
   </div>
   <div class="box-thumbnail__description">
-    <h3 class="pt-md c--primary-dark">{{word}}</h3>
-    <p class="cormorant-sm c--primary-dark">{{excerpt.short}}</p>
+    <h3 class="{{font_style.pt.md}} {{font_color.dark}}">{{word}}</h3>
+    <p class="{{font_style.cormorant.sm}} {{font_color.dark}}">{{excerpt.short}}</p>
   </div>
   <a href="{{url}}" class="box-thumbnail__button">
-    <button class="btn-sm btn-dark">{{word}}</button>
+    <button class="{{btn.sm}} {{btn.dark}}">{{word}}</button>
   </a>
 </div>
-
-{#
-<div class="box-thumbnail">
-  <div class="box-thumbnail__icon">
-    {% include "@atoms/icon-caption.twig" %}
-  </div>
-  <div class="box-thumbnail__description">
-    <p class="{{font_style}} {{font_color}}">{{excerpt.short}}</p>
-  </div>
-  <a href="{{url}}" class="box-thumbnail__button">
-    <button class="{{btn_size}} {{btn_color}}">{{word}}</button>
-  </a>
-</div>
-
-#}

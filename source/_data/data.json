@@ -51,5 +51,42 @@
     "ampm": "Faker.amPm"
   },
   "minute": "Faker.numberBetween(1, 59)",
-  "seconds": "Faker.numberBetween(1, 59)"
+  "seconds": "Faker.numberBetween(1, 59)",
+  "button": {
+    "lg": "btn-lg",
+    "sm": "btn-sm",
+    "color": "btn-dark"
+  },
+  "font_color": {
+    "light": "c--primary-light",
+    "dark": "c--primary-dark"
+  },
+  "font_style": {
+    "pt": {
+      "sm": "pt-sm",
+      "md": "pt-md",
+      "lg": "pt-lg"
+    },
+    "raleway": {
+      "sm": "raleway-sm",
+      "md": "raleway-md",
+      "lg": "raleway-lg"
+    },
+    "cormorant": {
+      "sm": "cormorant-sm",
+      "md": "cormorant-md",
+      "lg": "cormorant-lg"
+    },
+    "audimat": {
+      "sm": "audimat-sm",
+      "md": "audimat-md",
+      "lg": "audimat-lg"
+    }
+  },
+  "btn": {
+    "sm": "btn-sm",
+    "lg": "btn-lg",
+    "dark": "btn-dark"
+  }
+
 }

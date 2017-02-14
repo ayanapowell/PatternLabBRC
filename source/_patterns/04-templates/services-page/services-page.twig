@@ -1,0 +1,16 @@
+<!-- Services page -->
+{% include "@organisms/site-header.twig" %}
+{% block hero %}
+  {% include "@molecules/hero-block.twig" %}
+{% endblock %}
+<div class="services-content">
+  {% block content %}
+    <div class="services-content__slogan">
+      {% include "@molecules/text-block.twig" %}
+    </div>
+    <div class="services-content__services">
+      {% include "@organisms/brc-services.twig" %}
+    </div>
+  {% endblock %}
+</div>
+{% include "@organisms/footer.twig" %}
