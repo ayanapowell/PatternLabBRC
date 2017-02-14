@@ -1,0 +1,15 @@
+.thumbnail-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbnail-grid__item {
+  width: calc(50% - 80px);
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}

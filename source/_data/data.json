@@ -16,7 +16,7 @@
     "class": "hero-image"
   },
   "icon": {
-    "src": "../../../../images/fpo_square.png"
+    "src": "../../../../images/icons/icon.svg"
   },
   "excerpt": {
     "short": "Faker.sentence",

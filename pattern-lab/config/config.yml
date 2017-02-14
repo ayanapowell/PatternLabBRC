@@ -84,6 +84,7 @@ plugins:
           - ../source/_patterns/03-organisms
           - ../source/_patterns/03-organisms/site/site-footer
           - ../source/_patterns/03-organisms/site/site-header
+          - ../source/_patterns/03-organisms/thumbnail-grid
       templates:
         paths:
           - ../source/_patterns/04-templates
