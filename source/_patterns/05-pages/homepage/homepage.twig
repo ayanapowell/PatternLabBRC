@@ -1,10 +1,5 @@
 {% extends "@templates/homepage/homepage.twig" %}
+
 {% block hero %}
-  {% for item in pageItems %}
-  {% include "@molecules/hero-block.twig" with {
-    imgHero.src: item.src,
-  } %}
-
-{% endfor %}
-
-{% endblock hero %}
+  {% include '@molecules/hero-block.twig' with heroBlock %}
+{% endblock %}

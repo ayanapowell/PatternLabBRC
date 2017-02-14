@@ -1,26 +1,35 @@
 .hero-block {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: calc(100vh - 157px);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-block__image {
+.hero-block__image-wrapper {
   position: absolute;
   z-index: -1;
 }
 
 .hero-block__punchline {
   position: relative;
-  top: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  @include mobile { // re-define this later, dont forget!!!!!
+    @include font-size(35px);
+  }
 }
 
 .hero-block__button {
   position: relative;
-  top: 40%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,6 +5,14 @@ header {
   width: 90%;
   margin: 0 auto;
   height: 157px;
+
+  @include mobile {
+    justify-content: center;
+  }
+}
+
+.header__logo {
+
 }
 
 .header__navigation-button {
@@ -15,4 +23,8 @@ header {
 
 .header__contact-info {
   align-self: center;
+
+  @include mobile { // re-define this later, dont forget!
+    display: none;
+  }
 }

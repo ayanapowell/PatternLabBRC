@@ -1,16 +1,25 @@
-<!-- homepage -->
+<!-- homepage TEMPLATE -->
+{% block header %}
 {% include "@organisms/site-header.twig" %}
+{% endblock header %}
+
 {% block hero %}
   {% include "@molecules/hero-block.twig" %}
 {% endblock %}
+
 <div class="homepage-content">
   {% block content %}
-    <div class="homepage-content__mission-statement">
-      {% include "@molecules/quote-block.twig" %}
-    </div>
-    <div class="homepage-content__expertise-grid">
-      {% include "@organisms/thumbnail-grid.twig" %}
-    </div>
-  {% endblock %}
+
+      <div class="homepage-content__mission-statement">
+        {% include "@molecules/quote-block.twig" %}
+      </div>
+      <div class="homepage-content__expertise-grid">
+        {% include "@organisms/thumbnail-grid.twig" %}
+      </div>
+
+    {% endblock %}
 </div>
-{% include "@organisms/footer.twig" %}
+
+{% block footer %}
+  {% include "@organisms/footer.twig" %}
+{% endblock footer %}

@@ -1,12 +1,24 @@
 <!-- Hero block with image, text and a button -->
 <div class="hero-block">
-    <div class="hero-block__image">
-      {% include "@atoms/hero-image.twig" %}
-    </div>
-    <div class="hero-block__punchline">
-      <h1 class="{{font_style.pt.lg}} {{font_color.light}}">{{site_slogan}}</h1>
-    </div>
-    <div class="hero-block__button">
-      {% include "@atoms/animated-button.twig" %}
-    </div>
+  <div class="hero-block__image-wrapper">
+    {% include "@atoms/hero-image.twig" with {
+      imgHero: {
+        src: heroBlock.image.src,
+        alt: heroBlock.image.alt,
+        class: heroBlock.image.class
+      }
+    } %}
+  </div>
+
+  <div class="hero-block__punchline">
+    <h1 class="{{fontStyle}} {{fontColorLight}}">{{heroBlock.punchline}}</h1>
+  </div>
+
+  <div class="hero-block__button">
+    {% include "@atoms/animated-button.twig" with {
+      url: heroBlock.url,
+      text: heroBlock.button.text,
+      fontColorLight: heroBlock.button.fontColor
+    } %}
+  </div>
 </div>

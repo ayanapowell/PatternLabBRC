@@ -57,11 +57,9 @@
     "sm": "btn-sm",
     "color": "btn-dark"
   },
-  "font_color": {
-    "light": "c--primary-light",
-    "dark": "c--primary-dark"
-  },
-  "font_style": {
+  "fontColorLight": "c--primary-light",
+  "fontColorDark": "c--primary-dark",
+  "fontStyle": {
     "pt": {
       "sm": "pt-sm",
       "md": "pt-md",
