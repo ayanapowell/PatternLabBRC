@@ -67,6 +67,7 @@ plugins:
           - ../source/_patterns/01-atoms/buttons
           - ../source/_patterns/01-atoms/buttons/navigation-button
           - ../source/_patterns/01-atoms/icons/grid-icon
+          - ../source/_patterns/01-atoms/icons/icon-caption
           - ../source/_patterns/01-atoms/icons
           - ../source/_patterns/01-atoms/images
           - ../source/_patterns/01-atoms/images/hero-image
@@ -75,6 +76,7 @@ plugins:
           - ../source/_patterns/02-molecules
           - ../source/_patterns/02-molecules/box-thumbnail
           - ../source/_patterns/02-molecules/branding/site-logo
+          - ../source/_patterns/02-molecules/content-block
           - ../source/_patterns/02-molecules/footer-blocks/footer-bottom
           - ../source/_patterns/02-molecules/footer-blocks/footer-top
           - ../source/_patterns/02-molecules/hero-block

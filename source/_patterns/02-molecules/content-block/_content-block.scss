@@ -1,0 +1,15 @@
+.content-block {
+  min-height: 150px;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    border-bottom: 2px solid $c-gold;
+    padding-bottom: 2px;
+  }
+  p {
+    line-height: 20px;
+    padding: 25px 0;
+  }
+}
