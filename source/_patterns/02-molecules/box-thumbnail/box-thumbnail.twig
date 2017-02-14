@@ -1,8 +1,9 @@
 <div class="box-thumbnail">
   <div class="box-thumbnail__icon">
-    {% include "@atoms/icon-caption.twig" %}
+    {% include "@atoms/grid-icon.twig" %}
   </div>
   <div class="box-thumbnail__description">
+    <h3 class="pt-md c--primary-dark">{{word}}</h3>
     <p class="cormorant-sm c--primary-dark">{{excerpt.short}}</p>
   </div>
   <a href="{{url}}" class="box-thumbnail__button">

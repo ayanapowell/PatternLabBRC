@@ -66,7 +66,7 @@ plugins:
           - ../source/_patterns/01-atoms/buttons/animated-button
           - ../source/_patterns/01-atoms/buttons
           - ../source/_patterns/01-atoms/buttons/navigation-button
-          - ../source/_patterns/01-atoms/icons/icon-caption
+          - ../source/_patterns/01-atoms/icons/grid-icon
           - ../source/_patterns/01-atoms/icons
           - ../source/_patterns/01-atoms/images
           - ../source/_patterns/01-atoms/images/hero-image
@@ -90,6 +90,7 @@ plugins:
         paths:
           - ../source/_patterns/04-templates
           - ../source/_patterns/04-templates/content-types
+          - ../source/_patterns/04-templates/homepage
       pages:
         paths:
           - ../source/_patterns/05-pages

@@ -1,5 +1,5 @@
 .box-thumbnail {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,8 @@
 }
 
 .box-thumbnail__description {
+  text-align: center;
+  margin-top: 15px;
   p {
     margin: 0;
     text-align: center;
