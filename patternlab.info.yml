@@ -37,6 +37,7 @@ component-libraries:
   molecules:
     paths:
       - source/_patterns/02-molecules
+      - source/_patterns/02-molecules/box-thumbnail
       - source/_patterns/02-molecules/branding/site-logo
       - source/_patterns/02-molecules/footer-blocks/footer-bottom
       - source/_patterns/02-molecules/footer-blocks/footer-top
